@@ -1,0 +1,66 @@
+:root {
+
+    --scrollbar-width: .3em;
+
+    --responsive-spacing: max(.5em, 2vw);
+    --responsive-width: min(900px, 95vw);
+    --shadow: hsla(0, 0%, 0%, .3);
+
+    --bg-glass: hsla(220, 10%, 15%, .3);
+    --bg-glass-firefox: hsla(220, 10%, 15%, .95);
+    --bg-glass-firefox-light: hsla(220, 10%, 15%, .7);
+    --bg-primary: hsl(220, 10%, 15%);
+    --bg-secondary: hsl(220, 10%, 12%);
+    --bg-gradient: linear-gradient(45deg, var(--bg-primary) 0%, var(--bg-secondary) 100%);;
+    --text-color: hsl(40, 50%, 95%);
+    --text-code: hsl(45, 100%, 60%);
+    --responsive-text: clamp(.85rem, 1.5vw + .3rem, 1.2rem);
+
+    --selection-bg: hsl(0, 0%, 30%);
+    --selection-text: hsl(40, 50%, 100%);
+
+    --neon-solid: hsl(120, 50%, 50%);
+    --neon: hsla(120, 60%, 50%, .4);
+    --conic-neon: conic-gradient(transparent, transparent, transparent, var(--neon));
+
+    --neon-solid-blue: hsl(230, 80%, 70%);
+    --neon-blue: hsla(230, 90%, 75%, .5);
+    --conic-neon-blue: conic-gradient(transparent, transparent, transparent, var(--neon-blue));
+
+    --neon-solid-red: hsl(300, 80%, 65%);
+    --neon-red: hsla(300, 90%, 65%, .4);
+    --conic-neon-red: conic-gradient(transparent, transparent, transparent, var(--neon-red));
+}
+
+.fade-enter-from,
+.fade-leave-to {
+    opacity: 0;
+}
+
+.fade-enter-active,
+.fade-leave-active {
+    transition: .3s ease-out;
+}
+
+.grow-in-enter-from,
+.grow-in-leave-to {
+    opacity: 0;
+    transform: scale(0.3);
+}
+
+.grow-in-enter-active,
+.grow-in-leave-active {
+    transition: .3s ease-out;
+}
+
+.slide-up-enter-from,
+.slide-up-leave-to {
+    opacity: 0;
+    transform: translateY(100%);
+}
+
+.slide-up-enter-active,
+.slide-up-leave-active {
+    transition: .3s ease-out;
+}
+

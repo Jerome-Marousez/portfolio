@@ -1,0 +1,98 @@
+body {
+    overflow: hidden;
+    background: var(--bg-gradient);
+    color: var(--text-color);
+    font-family: main;
+
+    font-size: var(--responsive-text);
+}
+main {
+    will-change: transform, opacity;
+}
+
+
+h1, h2, h3, h4 {
+    margin: 0;
+}
+
+h1 {
+    font-family: orbitron;
+    letter-spacing: .2em;
+}
+
+
+.left {
+    text-align: left;
+}
+.center {
+    text-align: center;
+}
+.right {
+    text-align: right;
+}
+
+
+.flex-start {
+    align-self: flex-start;
+}
+.flex-end {
+    align-self: flex-end;
+}
+.flex-baseline {
+    align-self: baseline;
+}
+.flex-center {
+    align-self: center;
+}
+
+
+.view {
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    row-gap: 1em;
+    padding-inline: var(--responsive-spacing);
+    overflow: hidden;
+}
+
+.scrollable-section {
+    position: fixed;
+    overflow-x: hidden;
+    overflow-y: auto;
+    max-height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* ========================
+    SCROLLBAR
+=========================*/
+
+::-webkit-scrollbar {
+    width: var(--scrollbar-width);
+    height: 0.6rem;
+}
+
+::-webkit-scrollbar-track {
+    border-radius: 100vw;
+    margin-block: .4rem;
+    margin-inline: .4rem;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: var(--neon-red);
+    border-radius: 100vw;
+}
+
+/* FIREFOX SUPPORT */
+@supports (scrollbar-color: red blue) {
+    * {
+        scrollbar-color: var(--neon-red) transparent;
+    }
+}

@@ -1,0 +1,17 @@
+button {
+    cursor: pointer;
+    background: none;
+    outline: none;
+    border: none;
+    user-select: none;
+}
+
+.btn {
+
+}
+
+a {
+    text-decoration: none;
+    color: v-bind(colorSolid);
+    align-self: center;
+}
